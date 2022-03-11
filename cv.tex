@@ -1,0 +1,165 @@
+\documentclass[a4paper]{mctemplate} % a4paper for A4
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% BACKGROUND SHAPES
+%----------------------------------------------------------------------------------------
+
+% Specify sidebar width and header height
+\makebackground{7cm}{3.5cm}
+
+%----------------------------------------------------------------------------------------
+% HEADER
+%----------------------------------------------------------------------------------------
+
+% Specify name, surname and title
+\makeheader{Ariel}{Triana}{Computer Science Bachelor Student}
+
+%----------------------------------------------------------------------------------------
+% SIDEBAR
+%----------------------------------------------------------------------------------------
+
+\begin{sidebar}
+
+% Specify radius of profile picture
+\makepicture{2.1cm}
+
+%-------------------------------%
+
+\begin{contacttable}
+	\contactitem{phone}{}{+53 5 428 9607}
+	\contactitem{envelope}{mailto:usich37@gmail.com}{usich37@gmail.com}
+	\contactitem{globe}{https://arieltriana.github.io/}{arieltriana.github.io}
+	\contactitem{github}{https://github.com/ArielTriana}{ArielTriana}
+	\contactitem{linkedin}{https://www.linkedin.com/in/ariel-alfonso-triana-p\%C3\%A9rez-8369b8204/}{ArielTriana}
+\end{contacttable}
+
+%-------------------------------%
+
+\profilesection{Skills}
+\begin{skilltable}
+	\skillitem
+	{\textbf{Statistics}: causal inference, A/B testing, MonteCarlo simulation, bootstrapping, bagging, bayesian inference, GMM, maximum likelihood}
+	\skillitem
+	{\textbf{Data Structures \& Algorithms}: avl, tries, heap, kmp, graphs, dfs, bfs, disjoint sets}
+	\skillitem
+	{\textbf{Mathematics}: numerical optimization, gradient descent, dynamic programming}
+	\skillitem
+	{\textbf{Computing}: parallelization, multithreading, probabilistic programming}
+    \skillitem
+	{\textbf{Software Engineering}: solid, dry, agile manifesto, kanban, scrum, software architectures}
+\end{skilltable}
+
+%-------------------------------%
+
+\profilesection{Toolbox}
+\toolbox{
+    {Docker $\textbullet$ Unix /0.55},
+    {SQL $\textbullet$ Bootstrap $\textbullet$ CSS $\textbullet$ HTML /0.8},
+    {Github $\textbullet$ Markdown/1}}
+
+%-------------------------------%
+
+\profilesection{Coding}
+\begin{codingtable}
+	\codingitem{python.png}
+	{\textbf{Python}: numpy, scipy, pandas, sklearn, django, fastapi, seaborn}
+	\codingitem{c#.png}
+	{\textbf{C\#}: dotnet, EntityFramework, ASPNET, WindowsForm, WPF}
+	\codingitem{r.png}
+	{\textbf{R}: dplyr, data.table, ggplot2}
+	\codingitem{tools.png}
+	{\textbf{Misc}: C, C++, Haskell, TypeScript, JavaScript, VueJS}
+\end{codingtable}
+
+
+\end{sidebar}
+
+
+
+%----------------------------------------------------------------------------------------
+% MAIN
+%----------------------------------------------------------------------------------------
+
+\begin{main}
+
+\section{Education}
+
+\begin{experiencelist} 
+	\experienceitem
+    	{2018 - now }
+        {Bachelor in Computer Science}
+        {\href{https://www.uh.cu/}{\textbf{University of Havana}, Cuba}}
+        {Computer Science student at the University of Havana, with approximate graduation date in December 2022. Working on the development of the diploma thesis on 3D reconstruction of skin lesions through depth images.}
+\end{experiencelist}
+
+%-------------------------------%
+
+\section{Projects}
+
+\begin{experiencelist}
+    \experienceitem
+    	{2022}
+        {Battle Sim}
+        {\href{https://github.com/ArielTriana/battle-sim}{\textbf{Code on Github}}}
+        {Software implemented in Python to simulate war battles between armies. A DSL was designed, in addition an expert system for agents and different metaheuristics for the generation of height maps were used.}
+    \experienceitem
+    	{2022}
+        {ReTex}
+        {\href{https://github.com/ArielTriana/retex}{\textbf{Code on Github}}}
+        {A text-based information retrieval system. ReTex is modeled using the vector model with query caching. It is implemented in Python and VueJS.}
+    \experienceitem
+    	{2021}
+        {NetSim}
+        {\href{https://github.com/ArielTriana/net-sim}{\textbf{Code on Github}}}
+        {A network simulator that implements the OSI model. The school project of the subject Computer Networks. It is implemented in Python.}
+    \experienceitem
+    	{2021}
+        {Cine +}
+        {\href{https://github.com/ArielTriana/Cine-}{\textbf{Code on Github}}}
+        {Final project of Software Engineering. Official website of a cinema, with selection of seats, online payment and user profile.}
+    \experienceitem
+    	{2020}
+        {ttsh}
+        {\href{https://github.com/ArielTriana/ttsh}{\textbf{Code on Github}}}
+        {Shell implementation in C language.}
+    \experienceitem
+    	{2019}
+        {Wall-E}
+        {\href{https://github.com/ArielTriana/Wall-E}{\textbf{Code on Github}}}
+        {A robot in a simulated environment, controlled using symbolic language MATLAN. Implemented in C\#.}
+\end{experiencelist}
+
+%-------------------------------%
+
+\section{Research}
+\vspace{-.2cm}
+
+\begin{itemize}
+    \item \textbf{Use of neural networks, stochastic gradient descent and random sampling for the numerical solution of Differential Equations}
+    \hfill
+    {$
+    \begin{array}{c}
+    \begin{tikzpicture}
+        \node[scale=1, maincolor] at (.5,0){\href{https://arieltriana.github.io/projects/nnode/}{\faIcon[regular]{file-pdf}}};
+    \end{tikzpicture}
+    \end{array}
+    $}
+    \newline
+    Solving ordinary differential equations and systems of differential equations using Multilayer Perceptron, using random sampling and stochastic gradient descent. The proposed method constitutes a good performance numerical alternative to traditional methods such as Euler or Runge-Kutta.
+    \vspace{.3cm}
+\end{itemize}
+
+        
+%-------------------------------%     
+        
+\section{Other}
+\vspace{-.2cm}
+\begin{itemize}
+    \item \textbf{Languages}: Spanish (native), English (fluent)
+\end{itemize}
+
+\end{main}
+
+\end{document} 
